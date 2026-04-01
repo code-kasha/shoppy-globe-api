@@ -37,8 +37,8 @@ Track your progress on each requirement. Check off items as you complete them.
   - [✅ Done] `userId` (ObjectId reference)
   - [✅ Done] `productId` (ObjectId reference)
   - [✅ Done] `quantity` (Number)
-- [🔄 In Progress] Implement CRUD for Products collection
-- [🔄 In Progress] Implement CRUD for Cart collection
+- [✅ Done] Implement CRUD for Products collection
+- [✅ Done] Implement CRUD for Cart collection
 - [🔄 In Progress] Seed or manually add sample product data
 - [🔄 In Progress] Take and save **screenshots from MongoDB Database**
 
