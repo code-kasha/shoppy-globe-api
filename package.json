@@ -1,0 +1,36 @@
+{
+	"name": "shoppy-globe-api",
+	"version": "1.0.0",
+	"description": "Shoppy Globe - Online Shop",
+	"keywords": [
+		"Online",
+		"Shop",
+		"Node.js",
+		"Express",
+		"MongoDB"
+	],
+	"homepage": "https://github.com/code-kasha/shoppy-globe-api#readme",
+	"bugs": {
+		"url": "https://github.com/code-kasha/shoppy-globe-api/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/code-kasha/shoppy-globe-api.git"
+	},
+	"license": "ISC",
+	"author": "Akash Damle (https://github.com/code-kasha)",
+	"type": "module",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"dev": "nodemon server.js"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.14"
+	},
+	"dependencies": {
+		"dotenv": "^17.3.1",
+		"express": "^5.2.1",
+		"mongoose": "^9.3.3"
+	}
+}
