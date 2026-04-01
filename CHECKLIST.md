@@ -28,11 +28,11 @@ Track your progress on each requirement. Check off items as you complete them.
 ## 2. 🗄️ MongoDB Integration _(50 marks)_
 
 - [✅ Done] Set up MongoDB (local or Atlas)
-- [🔄 In Progress] Create **Products** collection with schema:
-  - [🔄 In Progress] `name` (String)
-  - [🔄 In Progress] `price` (Number)
-  - [🔄 In Progress] `description` (String)
-  - [🔄 In Progress] `stockQty` (Number)
+- [✅ Done] Create **Products** collection with schema:
+  - [✅ Done] `name` (String)
+  - [✅ Done] `price` (Number)
+  - [✅ Done] `description` (String)
+  - [✅ Done] `stockQty` (Number)
 - [🔄 In Progress] Create **Cart** collection with schema:
   - [🔄 In Progress] `userId` (ObjectId reference)
   - [🔄 In Progress] `productId` (ObjectId reference)
