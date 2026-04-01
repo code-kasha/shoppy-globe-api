@@ -39,7 +39,7 @@ Track your progress on each requirement. Check off items as you complete them.
   - [✅ Done] `quantity` (Number)
 - [✅ Done] Implement CRUD for Products collection
 - [✅ Done] Implement CRUD for Cart collection
-- [🔄 In Progress] Seed or manually add sample product data
+- [✅ Done] Seed or manually add sample product data
 - [🔄 In Progress] Take and save **screenshots from MongoDB Database**
 
 ---
