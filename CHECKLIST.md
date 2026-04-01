@@ -33,10 +33,10 @@ Track your progress on each requirement. Check off items as you complete them.
   - [✅ Done] `price` (Number)
   - [✅ Done] `description` (String)
   - [✅ Done] `stockQty` (Number)
-- [🔄 In Progress] Create **Cart** collection with schema:
-  - [🔄 In Progress] `userId` (ObjectId reference)
-  - [🔄 In Progress] `productId` (ObjectId reference)
-  - [🔄 In Progress] `quantity` (Number)
+- [✅ Done] Create **Cart** collection with schema:
+  - [✅ Done] `userId` (ObjectId reference)
+  - [✅ Done] `productId` (ObjectId reference)
+  - [✅ Done] `quantity` (Number)
 - [🔄 In Progress] Implement CRUD for Products collection
 - [🔄 In Progress] Implement CRUD for Cart collection
 - [🔄 In Progress] Seed or manually add sample product data
