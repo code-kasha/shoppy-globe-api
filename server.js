@@ -13,10 +13,9 @@ app.use("/", router)
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-// Routes
-router.use((req, res, next) => {
-	console.log("Request:", req.method)
-	next()
+// ✅ Sending a response — no next()
+router.get("/", (req, res) => {
+	res.status(200).json({ message: `Request: ${req.method}` })
 })
 
 import productRoutes from "./routes/productRoutes.js"
@@ -25,7 +24,7 @@ import authRoutes from "./routes/authRoutes.js"
 
 app.use("/products", productRoutes)
 app.use("/cart", cartRoutes)
-app.use("/", authRoutes)
+app.use("/api/auth", authRoutes)
 
 // MongoDB Connection
 mongoose

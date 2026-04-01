@@ -66,16 +66,16 @@ Track your progress on each requirement. Check off items as you complete them.
 
 ### Auth Routes
 
-- [⬜ Pending] `POST /register` — Register a new user (hash password before saving)
-- [⬜ Pending] `POST /login` — Authenticate user and return a JWT token
+- [✅ Done] `POST /register` — Register a new user (hash password before saving)
+- [✅ Done] `POST /login` — Authenticate user and return a JWT token
 
 ### Route Protection
 
-- [⬜ Pending] Create JWT authentication middleware
-- [⬜ Pending] Protect `POST /cart` with auth middleware
-- [⬜ Pending] Protect `PUT /cart/:id` with auth middleware
-- [⬜ Pending] Protect `DELETE /cart/:id` with auth middleware
-- [⬜ Pending] Return `401 Unauthorized` for missing/invalid tokens
+- [✅ Done] Create JWT authentication middleware
+- [✅ Done] Protect `POST /cart` with auth middleware
+- [✅ Done] Protect `PUT /cart/:id` with auth middleware
+- [✅ Done] Protect `DELETE /cart/:id` with auth middleware
+- [✅ Done] Return `401 Unauthorized` for missing/invalid tokens
 
 ---
 
