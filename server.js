@@ -1,16 +1,22 @@
+import dotenv from "dotenv"
 import express from "express"
 import mongoose from "mongoose"
-import dotenv from "dotenv"
 
 dotenv.config()
 
 const app = express()
+const router = express.Router()
 
 // Middleware
+app.use("/", router)
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // Routes (uncomment as you create them)
+router.use((req, res, next) => {
+	console.log("Request:", req.method)
+	next()
+})
 // import productRoutes from './routes/productRoutes.js';
 // import cartRoutes from './routes/cartRoutes.js';
 // import authRoutes from './routes/authRoutes.js';

@@ -27,7 +27,7 @@ Track your progress on each requirement. Check off items as you complete them.
 
 ## 2. 🗄️ MongoDB Integration _(50 marks)_
 
-- [🔄 In Progress] Set up MongoDB (local or Atlas)
+- [✅ Done] Set up MongoDB (local or Atlas)
 - [🔄 In Progress] Create **Products** collection with schema:
   - [🔄 In Progress] `name` (String)
   - [🔄 In Progress] `price` (Number)
@@ -58,11 +58,11 @@ Track your progress on each requirement. Check off items as you complete them.
 
 ## 4. 🔐 Authentication & Authorization _(60 marks)_
 
-- [⬜ Pending] Install `jsonwebtoken` and `bcryptjs` packages
-- [⬜ Pending] Create **User** model/schema:
-  - [⬜ Pending] `username` (String, unique)
-  - [⬜ Pending] `email` (String, unique)
-  - [⬜ Pending] `password` (String, hashed)
+- [✅ Done] Install `jsonwebtoken` and `bcryptjs` packages
+- [✅ Done] Create **User** model/schema:
+  - [✅ Done] `username` (String, unique)
+  - [✅ Done] `email` (String, unique)
+  - [✅ Done] `password` (String, hashed)
 
 ### Auth Routes
 
@@ -105,15 +105,15 @@ Track your progress on each requirement. Check off items as you complete them.
 
 ### GitHub Submission _(10 marks)_
 
-- [⬜ Pending] Push code to a public GitHub repository
-- [⬜ Pending] Include all source files (excluding `node_modules` and `.env`)
-- [⬜ Pending] Add `.gitignore` file
+- [✅ Done] Push code to a public GitHub repository
+- [✅ Done] Include all source files (excluding `node_modules` and `.env`)
+- [✅ Done] Add `.gitignore` file
 - [⬜ Pending] Include API testing screenshots in the repo
 
 ### Documentation & Comments _(5 marks)_
 
 - [⬜ Pending] Add inline comments explaining key logic
-- [⬜ Pending] Write clear and complete `README.md`
+- [✅ Done] Write clear and complete `README.md`
 - [⬜ Pending] Document all API endpoints (method, URL, request body, response)
 
 ---
@@ -122,7 +122,7 @@ Track your progress on each requirement. Check off items as you complete them.
 
 | Section                           | Marks   | Status     |
 | --------------------------------- | ------- | ---------- |
-| Node.js and Express API Setup     | 60      | ⬜ Pending |
+| Node.js and Express API Setup     | 60      | ✅ Done    |
 | MongoDB Integration               | 50      | ⬜ Pending |
 | API Error Handling and Validation | 20      | ⬜ Pending |
 | Authentication & Authorization    | 60      | ⬜ Pending |
