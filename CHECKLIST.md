@@ -14,14 +14,14 @@ Track your progress on each requirement. Check off items as you complete them.
 
 ### Product Routes
 
-- [🔄 In Progress] `GET /products/:id` — Fetch a single product by ID
-- [🔄 In Progress] `GET /products` — Fetch all products from MongoDB
+- [✅ Done] `GET /products/:id` — Fetch a single product by ID
+- [✅ Done] `GET /products` — Fetch all products from MongoDB
 
 ### Cart Routes
 
-- [🔄 In Progress] `POST /cart` — Add a product to the shopping cart
-- [🔄 In Progress] `PUT /cart/:id` — Update quantity of a product in the cart
-- [🔄 In Progress] `DELETE /cart/:id` — Remove a product from the cart
+- [✅ Done] `POST /cart` — Add a product to the shopping cart
+- [✅ Done] `PUT /cart/:id` — Update quantity of a product in the cart
+- [✅ Done] `DELETE /cart/:id` — Remove a product from the cart
 
 ---
 
@@ -46,13 +46,13 @@ Track your progress on each requirement. Check off items as you complete them.
 
 ## 3. ⚠️ API Error Handling and Validation _(20 marks)_
 
-- [⬜ Pending] Add error handling middleware to Express
-- [⬜ Pending] Handle `404` — Resource not found
-- [⬜ Pending] Handle `400` — Bad request / invalid input
-- [⬜ Pending] Handle `500` — Internal server errors
-- [⬜ Pending] Validate product ID exists before adding to cart
-- [⬜ Pending] Validate request body fields (e.g., quantity > 0)
-- [⬜ Pending] Return consistent JSON error responses
+- [✅ Done] Add error handling middleware to Express
+- [✅ Done] Handle `404` — Resource not found
+- [✅ Done] Handle `400` — Bad request / invalid input
+- [✅ Done] Handle `500` — Internal server errors
+- [✅ Done] Validate product ID exists before adding to cart
+- [✅ Done] Validate request body fields (e.g., quantity > 0)
+- [✅ Done] Return consistent JSON error responses
 
 ---
 
