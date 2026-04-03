@@ -13,7 +13,7 @@ export const notFound = (req, res, next) => {
 // ============================================================
 export const errorHandler = (err, req, res, next) => {
 	// Default to 500 if statusCode not set
-	let statusCode = err.statusCode || 500
+	let statusCode = err.statusCode || err.status || 500
 	let message = err.message || "Internal server error"
 	let errors = null
 
@@ -39,6 +39,14 @@ export const errorHandler = (err, req, res, next) => {
 	}
 
 	// ------------------------------------------------------------
+	// 400 Bad Request — Malformed JSON body
+	// ------------------------------------------------------------
+	if (err instanceof SyntaxError && err.status === 400 && "body" in err) {
+		statusCode = 400
+		message = "Malformed JSON in request body"
+	}
+
+	// ------------------------------------------------------------
 	// 409 Conflict — Duplicate key (e.g., unique field)
 	// ------------------------------------------------------------
 	if (err.code === 11000) {
@@ -48,11 +56,16 @@ export const errorHandler = (err, req, res, next) => {
 	}
 
 	// ------------------------------------------------------------
-	// 401 Unauthorized — JWT issues
+	// 401 Unauthorized — JWT issues (express-jwt & jsonwebtoken)
 	// ------------------------------------------------------------
-	if (err.name === "UnauthorizedError") {
+	if (err.name === "UnauthorizedError" || err.name === "JsonWebTokenError") {
 		statusCode = 401
 		message = "Missing or invalid JWT token"
+	}
+
+	if (err.name === "TokenExpiredError") {
+		statusCode = 401
+		message = "JWT token has expired"
 	}
 
 	// ------------------------------------------------------------

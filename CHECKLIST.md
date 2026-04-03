@@ -40,7 +40,7 @@ Track your progress on each requirement. Check off items as you complete them.
 - [✅ Done] Implement CRUD for Products collection
 - [✅ Done] Implement CRUD for Cart collection
 - [✅ Done] Seed or manually add sample product data
-- [🔄 In Progress] Take and save **screenshots from MongoDB Database**
+- [✅ Done] Take and save **screenshots from MongoDB Database**
 
 ---
 
@@ -82,16 +82,16 @@ Track your progress on each requirement. Check off items as you complete them.
 ## 5. 🧪 Testing with ThunderClient _(35 marks)_
 
 - [✅ Done] Install ThunderClient extension in VS Code
-- [] Test `POST /register` and save screenshot
-- [] Test `POST /login` and save screenshot (verify token returned)
-- [] Test `GET /products` and save screenshot
-- [] Test `GET /products/:id` (valid ID) and save screenshot
-- [] Test `GET /products/:id` (invalid ID) and save screenshot
-- [] Test `POST /cart` (with JWT token) and save screenshot
-- [] Test `PUT /cart/:id` (with JWT token) and save screenshot
-- [] Test `DELETE /cart/:id` (with JWT token) and save screenshot
-- [] Test `POST /cart` without token (expect 401) and save screenshot
-- [⬜ Pending] Save all screenshots in `/screenshots` folder
+- [✅ Done] Test `POST /register` and save screenshot
+- [✅ Done] Test `POST /login` and save screenshot (verify token returned)
+- [✅ Done] Test `GET /products` and save screenshot
+- [✅ Done] Test `GET /products/:id` (valid ID) and save screenshot
+- [✅ Done] Test `GET /products/:id` (invalid ID) and save screenshot
+- [✅ Done] Test `POST /cart` (with JWT token) and save screenshot
+- [✅ Done] Test `PUT /cart/:id` (with JWT token) and save screenshot
+- [✅ Done] Test `DELETE /cart/:id` (with JWT token) and save screenshot
+- [✅ Done] Test `POST /cart` without token (expect 401) and save screenshot
+- [✅ Done] Save all screenshots in `/screenshots` folder
 
 ---
 
@@ -99,22 +99,22 @@ Track your progress on each requirement. Check off items as you complete them.
 
 ### Code Quality _(10 marks)_
 
-- [⬜ Pending] API runs without errors
-- [⬜ Pending] All routes respond correctly
-- [⬜ Pending] No unhandled promise rejections or crashes
+- [✅ Done] API runs without errors
+- [✅ Done] All routes respond correctly
+- [✅ Done] No unhandled promise rejections or crashes
 
 ### GitHub Submission _(10 marks)_
 
 - [✅ Done] Push code to a public GitHub repository
 - [✅ Done] Include all source files (excluding `node_modules` and `.env`)
 - [✅ Done] Add `.gitignore` file
-- [⬜ Pending] Include API testing screenshots in the repo
+- [✅ Done] Include API testing screenshots in the repo
 
 ### Documentation & Comments _(5 marks)_
 
 - [✅ Done] Add inline comments explaining key logic
 - [✅ Done] Write clear and complete `README.md`
-- [⬜ Pending] Document all API endpoints (method, URL, request body, response)
+- [✅ Done] Document all API endpoints (method, URL, request body, response)
 
 ---
 
@@ -123,9 +123,9 @@ Track your progress on each requirement. Check off items as you complete them.
 | Section                           | Marks   | Status     |
 | --------------------------------- | ------- | ---------- |
 | Node.js and Express API Setup     | 60      | ✅ Done    |
-| MongoDB Integration               | 50      | ⬜ Pending |
-| API Error Handling and Validation | 20      | ⬜ Pending |
-| Authentication & Authorization    | 60      | ⬜ Pending |
-| Testing with ThunderClient        | 35      | ⬜ Pending |
+| MongoDB Integration               | 50      | ✅ Done    |
+| API Error Handling and Validation | 20      | ✅ Done    |
+| Authentication & Authorization    | 60      | ✅ Done    |
+| Testing with ThunderClient        | 35      | ✅ Done    |
 | Submission Guidelines             | 25      | ⬜ Pending |
 | **Total**                         | **250** | —          |

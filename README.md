@@ -2,6 +2,8 @@
 
 A RESTful backend API for the **ShoppyGlobe** e-commerce application, built with **Node.js**, **Express.js**, and **MongoDB**. Supports product management, shopping cart operations, and JWT-based user authentication.
 
+- The Documentation has been generated in api-docs.docx
+
 ---
 
 ## 📝 Author
@@ -16,6 +18,7 @@ A RESTful backend API for the **ShoppyGlobe** e-commerce application, built with
 - **Database:** MongoDB (via Mongoose)
 - **Authentication:** JSON Web Tokens (JWT)
 - **API Testing:** ThunderClient
+- **Documentaion:** MS Word
 
 ---
 
