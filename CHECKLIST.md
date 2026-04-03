@@ -81,16 +81,16 @@ Track your progress on each requirement. Check off items as you complete them.
 
 ## 5. 🧪 Testing with ThunderClient _(35 marks)_
 
-- [⬜ Pending] Install ThunderClient extension in VS Code
-- [⬜ Pending] Test `POST /register` and save screenshot
-- [⬜ Pending] Test `POST /login` and save screenshot (verify token returned)
-- [⬜ Pending] Test `GET /products` and save screenshot
-- [⬜ Pending] Test `GET /products/:id` (valid ID) and save screenshot
-- [⬜ Pending] Test `GET /products/:id` (invalid ID) and save screenshot
-- [⬜ Pending] Test `POST /cart` (with JWT token) and save screenshot
-- [⬜ Pending] Test `PUT /cart/:id` (with JWT token) and save screenshot
-- [⬜ Pending] Test `DELETE /cart/:id` (with JWT token) and save screenshot
-- [⬜ Pending] Test `POST /cart` without token (expect 401) and save screenshot
+- [✅ Done] Install ThunderClient extension in VS Code
+- [] Test `POST /register` and save screenshot
+- [] Test `POST /login` and save screenshot (verify token returned)
+- [] Test `GET /products` and save screenshot
+- [] Test `GET /products/:id` (valid ID) and save screenshot
+- [] Test `GET /products/:id` (invalid ID) and save screenshot
+- [] Test `POST /cart` (with JWT token) and save screenshot
+- [] Test `PUT /cart/:id` (with JWT token) and save screenshot
+- [] Test `DELETE /cart/:id` (with JWT token) and save screenshot
+- [] Test `POST /cart` without token (expect 401) and save screenshot
 - [⬜ Pending] Save all screenshots in `/screenshots` folder
 
 ---
@@ -112,7 +112,7 @@ Track your progress on each requirement. Check off items as you complete them.
 
 ### Documentation & Comments _(5 marks)_
 
-- [⬜ Pending] Add inline comments explaining key logic
+- [✅ Done] Add inline comments explaining key logic
 - [✅ Done] Write clear and complete `README.md`
 - [⬜ Pending] Document all API endpoints (method, URL, request body, response)
 

@@ -9,9 +9,9 @@ const app = express()
 const router = express.Router()
 
 // Middleware
-app.use("/", router)
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use("/", router)
 
 // ✅ Sending a response — no next()
 router.get("/", (req, res) => {
@@ -22,8 +22,8 @@ import productRoutes from "./routes/productRoutes.js"
 import cartRoutes from "./routes/cartRoutes.js"
 import authRoutes from "./routes/authRoutes.js"
 
-app.use("/products", productRoutes)
-app.use("/cart", cartRoutes)
+app.use("/api/products", productRoutes)
+app.use("/api/cart", cartRoutes)
 app.use("/api/auth", authRoutes)
 
 // MongoDB Connection

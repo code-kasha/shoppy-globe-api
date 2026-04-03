@@ -58,6 +58,9 @@ JWT_EXPIRES_IN=7d
 # Development mode
 npm run dev
 
+# Seed Data - Connect to the database and run
+node ./data/seedProducts.js
+
 # Production mode
 npm start
 ```

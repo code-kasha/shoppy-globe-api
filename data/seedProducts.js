@@ -1,11 +1,17 @@
-import "dotenv/config"
+import "dotenv/config" // Load environment variables from .env
 
 import mongoose from "mongoose"
 import Product from "../models/Product.js"
 
+// ------------------------------------------------------------
+// 1️⃣ Ensure MONGO_URI is defined in .env
+// ------------------------------------------------------------
 const MONGO_URI = process.env.MONGO_URI
 if (!MONGO_URI) throw new Error("MONGO_URI is not defined in your .env file")
 
+// ------------------------------------------------------------
+// 2️⃣ Sample product data to seed into the database
+// ------------------------------------------------------------
 const sampleProducts = [
 	{
 		name: "Wireless Headphones",
@@ -40,23 +46,45 @@ const sampleProducts = [
 	},
 ]
 
+// ============================================================
+// 3️⃣ Seed function
+// Connects to MongoDB, clears existing products, inserts sample data
+// ============================================================
 const seed = async () => {
 	try {
+		// ------------------------------------------------------------
+		// Connect to MongoDB
+		// ------------------------------------------------------------
 		await mongoose.connect(MONGO_URI)
-		console.log("Connected to MongoDB")
+		console.log("✅ Connected to MongoDB")
 
+		// ------------------------------------------------------------
+		// Remove all existing products to avoid duplicates
+		// ------------------------------------------------------------
 		await Product.deleteMany()
-		console.log("Cleared existing products")
+		console.log("✅ Cleared existing products")
 
+		// ------------------------------------------------------------
+		// Insert sample products into database
+		// ------------------------------------------------------------
 		const inserted = await Product.insertMany(sampleProducts)
-		console.log(`Seeded ${inserted.length} products:`)
+		console.log(`✅ Seeded ${inserted.length} products:`)
 		inserted.forEach((p) => console.log(`  • ${p.name} — $${p.price}`))
 	} catch (err) {
-		console.error("Seeding failed:", err.message)
+		// ------------------------------------------------------------
+		// Log any errors during connection or insertion
+		// ------------------------------------------------------------
+		console.error("❌ Seeding failed:", err.message)
 	} finally {
+		// ------------------------------------------------------------
+		// Disconnect from MongoDB regardless of success/failure
+		// ------------------------------------------------------------
 		await mongoose.disconnect()
-		console.log("Disconnected")
+		console.log("✅ Disconnected from MongoDB")
 	}
 }
 
+// ------------------------------------------------------------
+// Run the seed function
+// ------------------------------------------------------------
 seed()
