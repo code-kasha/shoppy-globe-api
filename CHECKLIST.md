@@ -120,12 +120,12 @@ Track your progress on each requirement. Check off items as you complete them.
 
 ## 📊 Marks Summary
 
-| Section                           | Marks   | Status     |
-| --------------------------------- | ------- | ---------- |
-| Node.js and Express API Setup     | 60      | ✅ Done    |
-| MongoDB Integration               | 50      | ✅ Done    |
-| API Error Handling and Validation | 20      | ✅ Done    |
-| Authentication & Authorization    | 60      | ✅ Done    |
-| Testing with ThunderClient        | 35      | ✅ Done    |
-| Submission Guidelines             | 25      | ⬜ Pending |
-| **Total**                         | **250** | —          |
+| Section                           | Marks   | Status |
+| --------------------------------- | ------- | ------ |
+| Node.js and Express API Setup     | 60      | ✅     |
+| MongoDB Integration               | 50      | ✅     |
+| API Error Handling and Validation | 20      | ✅     |
+| Authentication & Authorization    | 60      | ✅     |
+| Testing with ThunderClient        | 35      | ✅     |
+| Submission Guidelines             | 25      | ✅     |
+| **Total**                         | **250** | ------ |

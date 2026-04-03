@@ -63,6 +63,7 @@ npm run dev
 
 # Seed Data - Connect to the database and run
 node ./data/seedProducts.js
+node ./data/seedCart.js
 
 # Production mode
 npm start
